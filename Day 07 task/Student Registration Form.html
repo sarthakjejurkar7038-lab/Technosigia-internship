@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>My Portfolio</h2>
+    <div>
+      <a href="profile.html">Home</a>
+      <a href="registration.html">Register</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="page-title">Student Registration Form</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div class="row">
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+          </div>
+        </div>
+
+        <label>Gender</label>
+        <div class="options">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Details</legend>
+        <label for="course">Course</label>
+        <select id="course" name="course">
+          <option>Python</option>
+          <option>Data Analytics</option>
+          <option>Full Stack</option>
+        </select>
+
+        <label>Interests</label>
+        <div class="options">
+          <label><input type="checkbox" name="interest" value="web"> Web</label>
+          <label><input type="checkbox" name="interest" value="data"> Data</label>
+          <label><input type="checkbox" name="interest" value="ai"> AI</label>
+        </div>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+      </fieldset>
+
+      <button type="submit">Register</button>
+      <button type="reset" class="secondary">Reset</button>
+    </form>
+  </main>
+</body>
+</html>
