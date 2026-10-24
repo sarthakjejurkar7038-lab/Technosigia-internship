@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Student Dashboard</h1>
+    <p>Add students, search, filter and load live data</p>
+  </header>
+
+  <main>
+    <section class="stats">
+      <div class="stat stat-blue"><span id="totalCount">0</span><small>Students</small></div>
+      <div class="stat stat-purple"><span id="avgMarks">0</span><small>Average Marks</small></div>
+      <div class="stat stat-green"><span id="topMarks">0</span><small>Top Score</small></div>
+    </section>
+
+    <div class="layout">
+      <section class="card">
+        <h2>Add Student</h2>
+        <form id="studentForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter name">
+          <label for="marks">Marks</label>
+          <input type="number" id="marks" placeholder="0 - 100">
+          <button type="submit" class="btn primary">Add Student</button>
+        </form>
+        <p id="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Student List</h2>
+        <input type="text" id="search" placeholder="Search by name...">
+        <div class="filters">
+          <button class="chip active" id="showAll">All</button>
+          <button class="chip" id="showToppers">Toppers (75+)</button>
+        </div>
+        <ul id="list" class="student-list"></ul>
+      </section>
+    </div>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Live Data from API</h2>
+        <button id="loadApi" class="btn primary">Load Users</button>
+      </div>
+      <div id="apiList" class="user-grid"></div>
+    </section>
+  </main>
+
+  <footer>Day 9 - Advanced JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>

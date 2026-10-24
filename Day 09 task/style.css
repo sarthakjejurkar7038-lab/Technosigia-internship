@@ -1,0 +1,152 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f1f3fb;
+  color: #2d3142;
+}
+
+/* Header */
+.hero {
+  text-align: center;
+  color: white;
+  padding: 40px 16px 70px;
+  background: linear-gradient(135deg, #6C63FF, #3F8EFC);
+}
+.hero h1 { margin: 0 0 8px; font-size: 34px; }
+.hero p { margin: 0; opacity: 0.9; }
+
+main { max-width: 960px; margin: -40px auto 24px; padding: 0 16px; }
+
+/* Stat cards */
+.stats { display: flex; gap: 16px; margin-bottom: 16px; }
+.stat {
+  flex: 1;
+  color: white;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+.stat span { display: block; font-size: 32px; font-weight: bold; }
+.stat small { opacity: 0.9; }
+.stat-blue { background: linear-gradient(135deg, #3F8EFC, #2f6fd6); }
+.stat-purple { background: linear-gradient(135deg, #8E6CFF, #6C63FF); }
+.stat-green { background: linear-gradient(135deg, #2EC4A6, #1fa186); }
+
+/* Layout and cards (Flexbox) */
+.layout { display: flex; gap: 16px; margin-bottom: 16px; align-items: flex-start; }
+.layout .card:first-child { flex: 1; }
+.layout .card:last-child { flex: 2; }
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+}
+.card h2 { margin: 0 0 14px; font-size: 19px; color: #4a3fd6; }
+
+/* Form */
+label { display: block; font-size: 13px; font-weight: 600; margin: 10px 0 4px; }
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #d9dcea;
+  border-radius: 8px;
+  font-size: 14px;
+}
+input:focus {
+  outline: none;
+  border-color: #6C63FF;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.18);
+}
+.btn {
+  border: 0;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 14px;
+}
+.primary { background: linear-gradient(135deg, #6C63FF, #3F8EFC); color: white; }
+.btn:hover { opacity: 0.9; }
+#message { margin: 10px 0 0; font-weight: 600; min-height: 20px; }
+.success { color: #1fa186; }
+.error { color: #e5484d; }
+
+/* Filter chips */
+.filters { display: flex; gap: 8px; margin: 12px 0; }
+.chip {
+  border: 1.5px solid #6C63FF;
+  background: white;
+  color: #6C63FF;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.chip.active { background: #6C63FF; color: white; }
+
+/* Student list */
+.student-list { list-style: none; padding: 0; margin: 0; }
+.student {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f7f8fe;
+  margin-bottom: 8px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6C63FF, #3F8EFC);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.info { flex: 1; }
+.bar { height: 6px; background: #e3e6f3; border-radius: 3px; margin-top: 6px; overflow: hidden; }
+.fill { height: 100%; border-radius: 3px; }
+.badge { padding: 4px 10px; border-radius: 12px; color: white; font-weight: bold; font-size: 13px; }
+.great { background: #2EC4A6; }
+.good { background: #3F8EFC; }
+.ok { background: #F5A524; }
+.low { background: #E5484D; }
+.del { border: 0; background: none; color: #aaa; font-size: 22px; cursor: pointer; }
+.del:hover { color: #E5484D; }
+.empty { text-align: center; color: #888; padding: 16px; }
+
+/* API cards */
+.card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.card-head h2 { margin: 0; }
+.card-head .btn { margin: 0; }
+.user-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+.user {
+  flex: 1 1 250px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #f7f8fe;
+  border-radius: 10px;
+  padding: 12px;
+}
+.user strong { display: block; }
+.user small { color: #666; }
+.note { color: #888; margin: 0; }
+
+footer { text-align: center; color: #888; padding: 16px; font-size: 13px; }
+
+/* Responsive design for mobile */
+@media (max-width: 700px) {
+  .stats, .layout { flex-direction: column; }
+  .layout { align-items: stretch; }
+  .layout .card { flex: none; }
+  .hero h1 { font-size: 26px; }
+}
