@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+  color: #1f2a44;
+  background: #f6f7fb;
+}
