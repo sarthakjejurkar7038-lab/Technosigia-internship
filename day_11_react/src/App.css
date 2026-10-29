@@ -1,0 +1,99 @@
+.page-header {
+  text-align: center;
+  color: white;
+  padding: 36px 16px 70px;
+  background: linear-gradient(135deg, #6C63FF, #3F8EFC);
+}
+.page-header h1 { margin: 0 0 6px; }
+.page-header p { margin: 0; opacity: 0.9; }
+
+/* Layout (Flexbox) */
+.layout {
+  max-width: 960px;
+  margin: -40px auto 24px;
+  padding: 0 16px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.layout .card:first-child { flex: 1; }
+.layout .card:last-child { flex: 1.3; }
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(31, 42, 68, 0.1);
+}
+.card h2 { margin: 0 0 14px; font-size: 20px; color: #4a3fd6; }
+
+/* Form */
+label { display: block; font-size: 13px; font-weight: 600; margin: 12px 0 4px; }
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #d9dcea;
+  border-radius: 8px;
+  font-size: 14px;
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: #6C63FF;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.18);
+}
+button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6C63FF, #3F8EFC);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.error { color: #e5484d; font-size: 13px; margin: 4px 0 0; }
+.success { color: #1fa186; font-weight: 600; margin: 12px 0 0; text-align: center; }
+
+/* Student list */
+.list { list-style: none; padding: 0; margin: 0; }
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #f7f8fe;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6C63FF, #3F8EFC);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.details { flex: 1; display: flex; flex-direction: column; }
+.details span { font-size: 13px; color: #666; }
+.course {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  background: #eef0ff;
+  color: #6C63FF;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+.empty { color: #888; text-align: center; padding: 20px 0; }
+
+/* Responsive */
+@media (max-width: 700px) {
+  .layout { flex-direction: column; align-items: stretch; }
+  .layout .card { flex: none; }
+}
