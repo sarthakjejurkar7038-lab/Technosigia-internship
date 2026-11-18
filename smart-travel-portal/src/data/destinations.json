@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Jaipur",
+    "location": "Rajasthan, India",
+    "color": "linear-gradient(135deg, #e07a5f, #f2cc8f)"
+  },
+  {
+    "id": 2,
+    "name": "Goa",
+    "location": "Goa, India",
+    "color": "linear-gradient(135deg, #0077b6, #90e0ef)"
+  },
+  {
+    "id": 3,
+    "name": "Kerala",
+    "location": "Kerala, India",
+    "color": "linear-gradient(135deg, #2d6a4f, #95d5b2)"
+  },
+  {
+    "id": 4,
+    "name": "Manali",
+    "location": "Himachal Pradesh, India",
+    "color": "linear-gradient(135deg, #3d5a80, #98c1d9)"
+  }
+]
