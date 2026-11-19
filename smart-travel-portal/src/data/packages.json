@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Royal Rajasthan Tour",
+    "location": "Jaipur - Udaipur - Jodhpur",
+    "duration": "6 Days / 5 Nights",
+    "price": 32000,
+    "popular": true,
+    "color": "linear-gradient(135deg, #9d0208, #e85d04)",
+    "highlights": [
+      "Hotel stay with breakfast",
+      "Private cab for sightseeing",
+      "Fort and palace entry tickets",
+      "Local guide included"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Golden Triangle Tour",
+    "location": "Delhi - Agra - Jaipur",
+    "duration": "5 Days / 4 Nights",
+    "price": 24000,
+    "popular": false,
+    "color": "linear-gradient(135deg, #7f5539, #b08968)",
+    "highlights": [
+      "Sunrise visit to the Taj Mahal",
+      "Comfortable hotel stay",
+      "AC car for all transfers",
+      "Daily breakfast"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Goa Beach Holiday",
+    "location": "North Goa - South Goa",
+    "duration": "4 Days / 3 Nights",
+    "price": 16500,
+    "popular": false,
+    "color": "linear-gradient(135deg, #023e8a, #0096c7)",
+    "highlights": [
+      "Beachside resort stay",
+      "Water sports package",
+      "Airport pickup and drop",
+      "Sunset cruise"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Kerala Backwater Escape",
+    "location": "Kochi - Munnar - Alleppey",
+    "duration": "5 Days / 4 Nights",
+    "price": 28000,
+    "popular": true,
+    "color": "linear-gradient(135deg, #1b4332, #40916c)",
+    "highlights": [
+      "Night on a private houseboat",
+      "Tea garden visit in Munnar",
+      "Daily breakfast and dinner",
+      "Cultural dance show"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Manali Snow Adventure",
+    "location": "Manali - Solang Valley",
+    "duration": "5 Days / 4 Nights",
+    "price": 21000,
+    "popular": false,
+    "color": "linear-gradient(135deg, #1d3557, #457b9d)",
+    "highlights": [
+      "Snow activities at Solang Valley",
+      "Mountain-view hotel",
+      "Rohtang Pass sightseeing",
+      "Daily breakfast"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Ladakh Explorer",
+    "location": "Leh - Nubra - Pangong",
+    "duration": "7 Days / 6 Nights",
+    "price": 45000,
+    "popular": false,
+    "color": "linear-gradient(135deg, #3c096c, #7b2cbf)",
+    "highlights": [
+      "Stay at Pangong Lake camp",
+      "Nubra Valley camel safari",
+      "Inner line permits arranged",
+      "Experienced driver and guide"
+    ]
+  }
+]

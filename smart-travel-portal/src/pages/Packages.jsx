@@ -1,9 +1,21 @@
+import PageHeader from '../components/PageHeader'
+import PackageList from '../components/PackageList'
+import packages from '../data/packages.json'
+
 function Packages() {
   return (
-    <section className="page container">
-      <h1>Tour Packages</h1>
-      <p>Tour packages will be added soon.</p>
-    </section>
+    <>
+      <PageHeader
+        title="Tour Packages"
+        subtitle="Handpicked itineraries for every kind of traveller"
+      />
+
+      <section className="section">
+        <div className="container">
+          <PackageList packages={packages} />
+        </div>
+      </section>
+    </>
   )
 }
 

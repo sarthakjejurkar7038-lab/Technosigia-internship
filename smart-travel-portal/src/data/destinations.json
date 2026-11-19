@@ -3,24 +3,72 @@
     "id": 1,
     "name": "Jaipur",
     "location": "Rajasthan, India",
+    "description": "The Pink City, famous for grand forts, palaces and colourful bazaars.",
+    "price": 15000,
+    "image": "/images/destinations/jaipur.jpg",
     "color": "linear-gradient(135deg, #e07a5f, #f2cc8f)"
   },
   {
     "id": 2,
     "name": "Goa",
     "location": "Goa, India",
+    "description": "Golden beaches, lively nightlife and relaxed seaside charm.",
+    "price": 18000,
+    "image": "/images/destinations/goa.jpg",
     "color": "linear-gradient(135deg, #0077b6, #90e0ef)"
   },
   {
     "id": 3,
     "name": "Kerala",
     "location": "Kerala, India",
+    "description": "Peaceful backwaters, houseboats, tea hills and lush green scenery.",
+    "price": 22000,
+    "image": "/images/destinations/kerala.jpg",
     "color": "linear-gradient(135deg, #2d6a4f, #95d5b2)"
   },
   {
     "id": 4,
     "name": "Manali",
     "location": "Himachal Pradesh, India",
+    "description": "Snow-capped mountains, adventure sports and cool mountain air.",
+    "price": 20000,
+    "image": "/images/destinations/manali.jpg",
     "color": "linear-gradient(135deg, #3d5a80, #98c1d9)"
+  },
+  {
+    "id": 5,
+    "name": "Agra",
+    "location": "Uttar Pradesh, India",
+    "description": "Home of the Taj Mahal, one of the seven wonders of the world.",
+    "price": 9000,
+    "image": "/images/destinations/agra.jpg",
+    "color": "linear-gradient(135deg, #bc6c25, #fefae0)"
+  },
+  {
+    "id": 6,
+    "name": "Udaipur",
+    "location": "Rajasthan, India",
+    "description": "The City of Lakes, with royal palaces and beautiful sunsets.",
+    "price": 17000,
+    "image": "/images/destinations/udaipur.jpg",
+    "color": "linear-gradient(135deg, #7b2cbf, #e0aaff)"
+  },
+  {
+    "id": 7,
+    "name": "Varanasi",
+    "location": "Uttar Pradesh, India",
+    "description": "One of the oldest cities in the world, famous for the Ganga aarti.",
+    "price": 10000,
+    "image": "/images/destinations/varanasi.jpg",
+    "color": "linear-gradient(135deg, #d00000, #ffba08)"
+  },
+  {
+    "id": 8,
+    "name": "Leh Ladakh",
+    "location": "Ladakh, India",
+    "description": "High mountain passes, blue lakes and breathtaking landscapes.",
+    "price": 30000,
+    "image": "/images/destinations/ladakh.jpg",
+    "color": "linear-gradient(135deg, #1d3557, #a8dadc)"
   }
 ]
