@@ -26,6 +26,7 @@ function Header() {
           <NavLink to="/destinations" onClick={closeMenu}>Destinations</NavLink>
           <NavLink to="/packages" onClick={closeMenu}>Packages</NavLink>
           <NavLink to="/favorites" onClick={closeMenu}>Favorites</NavLink>
+                    <NavLink to="/about" onClick={closeMenu}>About</NavLink>
           <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
         </nav>
       </div>

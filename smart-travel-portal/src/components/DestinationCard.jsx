@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/cards.css'
 
-function DestinationCard({ name, image, location, description, price, color }) {
+function DestinationCard({ id, name, image, location, description, price, color }) {
   const [imageFailed, setImageFailed] = useState(false)
 
   return (
@@ -28,7 +29,9 @@ function DestinationCard({ name, image, location, description, price, color }) {
             <span>Estimated price</span>
             <strong>&#8377;{price.toLocaleString('en-IN')}</strong>
           </div>
-          <button className="btn btn-primary btn-small">View Details</button>
+          <Link to={`/destinations/${id}`} className="btn btn-primary btn-small">
+            View Details
+          </Link>
         </div>
       </div>
     </article>

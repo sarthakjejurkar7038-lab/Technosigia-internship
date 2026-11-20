@@ -42,7 +42,8 @@ function Home() {
           </p>
           <div className="card-grid">
             {featured.map((place) => (
-              <div
+                        <Link
+                to={`/destinations/${place.id}`}
                 className="dest-card"
                 key={place.id}
                 style={{ background: place.color }}
@@ -51,7 +52,7 @@ function Home() {
                   <h3>{place.name}</h3>
                   <p>{place.location}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

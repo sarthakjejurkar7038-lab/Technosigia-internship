@@ -11,6 +11,7 @@ function DestinationList({ destinations }) {
       {destinations.map((item) => (
         <DestinationCard
           key={item.id}
+          id={item.id}
           name={item.name}
           image={item.image}
           location={item.location}

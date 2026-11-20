@@ -82,3 +82,9 @@
     border-bottom: 1px solid #f1f5f9;
   }
 }
+
+@media (max-width: 1000px) {
+  .nav {
+    gap: 18px;
+  }
+}
